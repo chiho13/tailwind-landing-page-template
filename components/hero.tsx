@@ -1,22 +1,63 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
-import HeroImage from '@/public/images/hero-image.png'
-import Modal from '@/components/utils/modal'
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import HeroImage from "@/public/images/hero-image.png";
+import Modal from "@/components/utils/modal";
 
 export default function Hero() {
+  // const [videoModalOpen, setVideoModalOpen] = useState<boolean>(false);
 
-  const [videoModalOpen, setVideoModalOpen] = useState<boolean>(false)
+  const [email, setEmail] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setErrorMessage(""); // Reset the error message
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setStatusMessage("Successfully joined the waitlist!");
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(
+          errorData.error || "An error occurred. Please try again."
+        );
+      }
+    } catch (error) {
+      setErrorMessage("An error occurred. Please try again.");
+    }
+  };
   return (
     <section className="relative">
-
       {/* Illustration behind hero content */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
-        <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
+      <div
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1"
+        aria-hidden="true"
+      >
+        <svg
+          width="1360"
+          height="578"
+          viewBox="0 0 1360 578"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
+            <linearGradient
+              x1="50%"
+              y1="0%"
+              x2="50%"
+              y2="100%"
+              id="illustration-01"
+            >
               <stop stopColor="#FFF" offset="0%" />
               <stop stopColor="#EAEAEA" offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
@@ -30,84 +71,158 @@ export default function Hero() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your website <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span></h1>
+            <h1
+              className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
+              data-aos="zoom-y-out"
+            >
+              Create{" "}
+              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-teal-400">
+                engaging
+              </span>{" "}
+              and{" "}
+              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-teal-400">
+                interactive
+              </span>{" "}
+              learning experiences
+            </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
-                </div>
-                <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
+              <p
+                className="text-xl text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                Empowering Educators with Dynamic and Engaging Tools
+              </p>
+              <div
+                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+                data-aos="zoom-y-out"
+                data-aos-delay="300"
+              >
+                {/* <div>
+                  <a
+                    className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+                    href="#0"
+                  >
+                    Start free trial
+                  </a>
+                </div> */}
+
+                {/* <div>
+                  <a
+                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+                    href="#0"
+                  >
+                    Learn more
+                  </a>
+                </div> */}
+                <div className="relative w-full max-w-md lg:max-w-lg">
+                  <div
+                    className="
+                        text-black
+                        w-full
+                        bg-white
+                        flex flex-col
+                        items-center
+                        px-4
+                        py-5
+                        rounded-2xl
+                        z-10
+                        shadow-2xl shadow-black/10
+                        md:px-7
+                        lg:py-9
+                        selection:bg-black selection:text-white
+                    "
+                  >
+                    <h3 className="font-bold text-3xl mb-10 lg:text-4xl">
+                      Get Notified
+                    </h3>
+                    <form
+                      className="flex flex-col items-center w-full space-y-8 mb-8"
+                      onSubmit={handleSubmit}
+                    >
+                      {statusMessage && (
+                        <span className="flex items-center tracking-wide text-green-600 text-md text-bold mt-1 ml-1">
+                          {statusMessage}
+                        </span>
+                      )}
+                      <div className="flex flex-col space-y-4 w-full font-semibold">
+                        <div className="p-[3px] rounded-lg  bg-gradient-to-r from-blue-500 to-teal-400">
+                          <input
+                            type="text"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="
+                                    transition-colors
+                                    w-full
+                                    bg-slate-100
+                                    px-5
+                                    py-3
+                                    rounded-md
+                                    border-0
+                                    focus:outline-none
+                                    focus:ring-[3px] focus:ring-black
+                                "
+                          />
+                        </div>
+
+                        {errorMessage && (
+                          <span className="flex items-center font-medium tracking-wide text-red-500 text-sm mt-1 ml-1">
+                            {errorMessage}
+                          </span>
+                        )}
+                      </div>
+                      <button
+                        type="submit"
+                        className="
+                                transition-all
+                                flex
+                                items-center
+                                justify-center
+                                space-x-1
+                                px-5
+                                py-3
+                                bg-black
+                                text-white
+                                rounded-lg
+                                w-full
+                                ring-transparent ring-offset-4 ring
+                                active:ring-black
+                                hover:bg-neutral-800
+                            "
+                      >
+                        <span>Join waitlist</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          className="w-5 h-5"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </form>
+                    <p className="text-slate-500">
+                      We'll get in touch with you{" "}
+                      <span className="font-bold">soon</span>.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Hero image */}
-          <div>
-            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
-              <div className="flex flex-col justify-center">
-                <Image className="mx-auto" src={HeroImage} width={768} height={432} priority alt="Hero" />
-                <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">
-                      <stop stopColor="#FFF" offset="0%" />
-                      <stop stopColor="#EAEAEA" offset="77.402%" />
-                      <stop stopColor="#DFDFDF" offset="100%" />
-                    </linearGradient>
-                    <linearGradient x1="50%" y1="0%" x2="50%" y2="99.24%" id="hero-ill-b">
-                      <stop stopColor="#FFF" offset="0%" />
-                      <stop stopColor="#EAEAEA" offset="48.57%" />
-                      <stop stopColor="#DFDFDF" stopOpacity="0" offset="100%" />
-                    </linearGradient>
-                    <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="hero-ill-e">
-                      <stop stopColor="#4FD1C5" offset="0%" />
-                      <stop stopColor="#81E6D9" offset="25.871%" />
-                      <stop stopColor="#338CF5" offset="100%" />
-                    </radialGradient>
-                    <circle id="hero-ill-d" cx="384" cy="216" r="64" />
-                  </defs>
-                  <g fill="none" fillRule="evenodd">
-                    <circle fillOpacity=".04" fill="url(#hero-ill-a)" cx="384" cy="216" r="128" />
-                    <circle fillOpacity=".16" fill="url(#hero-ill-b)" cx="384" cy="216" r="96" />
-                    <g fillRule="nonzero">
-                      <use fill="#000" xlinkHref="#hero-ill-d" />
-                      <use fill="url(#hero-ill-e)" xlinkHref="#hero-ill-d" />
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
-                <svg className="w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
-                  <path d="M10 17l6-5-6-5z" />
-                </svg>
-                <span className="ml-3">Watch the full video (2 min)</span>
-              </button>
-            </div>
-
-            {/* Modal */}
-            <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
-              <div className="relative pb-9/16">
-                <video className="absolute w-full h-full" width="1920" height="1080" loop controls>
-                  <source src="/videos/video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>                
-              </div>
-            </Modal>
-
-          </div>
-
         </div>
-
       </div>
     </section>
-  )
+  );
 }
