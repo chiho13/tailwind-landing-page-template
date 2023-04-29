@@ -41,7 +41,7 @@ export default function Terms() {
         </svg>
       </div>
 
-      <div className="max-w-[900px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[900px] mx-auto px-4 sm:px-6" data-aos="zoom-y-out">
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}

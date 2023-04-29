@@ -54,7 +54,7 @@ export default function Terms() {
             </h1>
           </header>
 
-          <div className="article w-richtext">
+          <div className="article w-richtext" data-aos="zoom-y-out">
             <h5 className="font-bold text-xl mb-4">Introduction</h5>
             <p className="mb-2">
               Welcome to Vontane Limited ("Vontane" or "we"). By using our
