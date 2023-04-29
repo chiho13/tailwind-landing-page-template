@@ -7,7 +7,7 @@ client.setApiKey(process.env.SENDGRID_API_KEY);
 
 // setApiKey(process.env.SENDGRID_API_KEY);
 
-function isValidEmail(email) {
+function isValidEmail(email: string) {
   const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
   return emailRegex.test(email);
 }
