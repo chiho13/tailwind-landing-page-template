@@ -32,9 +32,6 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex items-center shrink-0 mr-4">
             <Logo />
-            <span className="bg-clip-text text-transparent text-bold ml-2 bg-gradient-to-r from-[#db4429] to-[#f7b322]">
-              VONTANE
-            </span>
           </div>
 
           {/* Desktop navigation */}

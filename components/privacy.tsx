@@ -128,8 +128,11 @@ export default function Terms() {
             <div>
               <p className="mt-4">
                 If you have any questions, please contact{" "}
-                <a className="text-blue-500" href="mailto:anthony@vontane.com">
-                  anthony@vontane.com
+                <a
+                  className="text-blue-500"
+                  href="mailto:anthony.ho@vontane.com"
+                >
+                  anthony.ho@vontane.com
                 </a>
               </p>
             </div>
