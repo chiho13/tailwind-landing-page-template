@@ -30,7 +30,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
-          <div className="flex items-center shrink-0 mr-4">
+          <div className="flex items-center mr-4">
             <Logo />
           </div>
 
