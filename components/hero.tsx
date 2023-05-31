@@ -53,7 +53,6 @@ export default function Hero() {
           <defs>
             <linearGradient
               x1="50%"
-              ousou
               y1="0%"
               x2="50%"
               y2="100%"
