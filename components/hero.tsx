@@ -53,6 +53,7 @@ export default function Hero() {
           <defs>
             <linearGradient
               x1="50%"
+              ousou
               y1="0%"
               x2="50%"
               y2="100%"
@@ -87,7 +88,7 @@ export default function Hero() {
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-teal-400">
                 interactive
               </span>{" "}
-              learning experiences
+              content
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
@@ -95,7 +96,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Empowering Educators with Dynamic and Engaging Tools
+                For Marketers, Copywriters and Educators
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
