@@ -1,13 +1,12 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
+import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Footer from "@/components/ui/footer";
-import { Analytics } from "@vercel/analytics/react";
-import GoogleAnalytics from "@/components/googleanalytics";
+
 export default function DefaultLayout({
   children,
 }: {
@@ -24,13 +23,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <main className="grow">
-        {children}
-        <Analytics />
-        <Suspense>
-          <GoogleAnalytics />
-        </Suspense>
-      </main>
+      <main className="grow">{children}</main>
 
       <Footer />
     </>

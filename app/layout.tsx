@@ -4,6 +4,11 @@ import { Inter } from "next/font/google";
 
 import Header from "@/components/ui/header";
 import Banner from "@/components/banner";
+import { Suspense } from "react";
+
+import { Analytics } from "@vercel/analytics/react";
+import GoogleAnalytics from "@/components/googleanalytics";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,6 +28,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Analytics />
+        <Suspense>
+          <GoogleAnalytics />
+        </Suspense>
+        <Script
+          defer
+          data-domain="vontane.com"
+          src="https://plausible.io/js/script.js"
+        ></Script>
+      </head>
       <body
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
       >
