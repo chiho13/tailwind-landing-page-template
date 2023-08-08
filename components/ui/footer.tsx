@@ -29,98 +29,38 @@ export default function Footer() {
           </div>
 
           {/* 2nd block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <a href="/blog">
+              <h6 className="text-gray-800 font-medium mb-2 underline font-semibold">
+                Blog
+              </h6>
+            </a>
             <ul className="text-sm">
               <li className="mb-2">
                 <a
-                  href="#0"
+                  href="/blog/getting_started_with_vontane_editor-78569dfa-6e05-4f89-8111-c5733ab073f9"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Web Studio
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  DynamicBox Flex
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Programming Forms
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Integrations
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Command-line
+                  Getting Started
                 </a>
               </li>
             </ul>
-          </div> */}
+          </div>
 
           {/* 3rd block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-gray-800 font-semibold mb-2">Contact</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <a
-                  href="#0"
+                  href="mailto: vontane@proton.me"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Documentation
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Tutorials & Guides
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Blog
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Support Center
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Partners
+                  vontane@proton.me
                 </a>
               </li>
             </ul>
-          </div> */}
+          </div>
 
           {/* 4th block */}
           {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">

@@ -72,31 +72,34 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
+
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
+          <div className="text-center pb-12 md:pb-16 h-[700px]">
             <h1
-              className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
+              className="text-4xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4 w-[600px] mx-auto"
               data-aos="zoom-y-out"
             >
               Create{" "}
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
                 engaging
-              </span>{" "}
+              </span>
               and{" "}
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-sky-400">
                 interactive
-              </span>{" "}
+              </span>
               content
             </h1>
+
             <div className="max-w-3xl mx-auto">
               <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                For Marketers, Copywriters and Educators
+                For Educators, Marketers and Creatives
               </p>
+
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
                 data-aos="zoom-y-out"
@@ -119,7 +122,27 @@ export default function Hero() {
                     Learn more
                   </a>
                 </div> */}
-                <div className="relative w-full max-w-md lg:max-w-lg">
+
+                <a
+                  href="#"
+                  className="subscribe-btn flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  bg-gradient-to-r from-blue-500 to-sky-400 text-center text-base  font-semibold text-white transition"
+                >
+                  <div className="flex items-center justify-center h-full">
+                    <span className="text-md ml-2">Sign up for Free</span>
+                  </div>
+                </a>
+
+                <Image
+                  data-aos="zoom-y-in"
+                  data-aos-delay="300"
+                  src="/images/landingpageimage.png"
+                  alt="demo image"
+                  className="rounded-lg mt-[100px] border-2 border-gray-300 shadow-md opacity-80"
+                  width={700}
+                  height={300}
+                />
+
+                {/* <div className="relative w-full max-w-md lg:max-w-lg">
                   <div
                     className="
                         text-black
@@ -215,7 +238,7 @@ export default function Hero() {
                       <span className="font-bold">soon</span>.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
