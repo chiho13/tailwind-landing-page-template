@@ -75,9 +75,9 @@ export default function Hero() {
 
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16 h-[700px]">
+          <div className="text-center pb-12 md:pb-16 h-[700px] ">
             <h1
-              className="text-4xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4 w-[600px] mx-auto"
+              className="text-3xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
               data-aos="zoom-y-out"
             >
               Create{" "}
@@ -101,7 +101,7 @@ export default function Hero() {
               </p>
 
               <div
-                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+                className="max-w-xs mx-auto max-w-none flex justify-center"
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
