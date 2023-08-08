@@ -80,11 +80,11 @@ export default function Hero() {
               data-aos="zoom-y-out"
             >
               Create{" "}
-              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-teal-400">
+              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
                 engaging
               </span>{" "}
               and{" "}
-              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-teal-400">
+              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-sky-400">
                 interactive
               </span>{" "}
               content
@@ -150,7 +150,7 @@ export default function Hero() {
                         </span>
                       )}
                       <div className="flex flex-col space-y-4 w-full font-semibold">
-                        <div className="p-[3px] rounded-lg  bg-gradient-to-r from-blue-500 to-teal-400">
+                        <div className="p-[3px] rounded-lg  bg-gradient-to-r from-blue-500 to-sky-400">
                           <input
                             type="text"
                             placeholder="Email"
