@@ -149,15 +149,24 @@ export default function Terms() {
                 the premium tier features until the end of the current billing
                 period, but your subscription will not be renewed.
               </li>
-              <li>
-                <strong>Refunds:</strong> Vontane may, in its sole discretion,
-                offer refunds for its premium tier services under certain
-                conditions. If you believe you are eligible for a refund, please
-                contact Vontane customer support with your refund request and
-                provide any relevant information. Any approved refunds will be
-                processed through Stripe according to the payment method used
-                for the original transaction.
-              </li>
+              <strong>Refunds and Withdrawal Policy:</strong> By completing your
+              purchase with Vontane, you gain immediate access to credits
+              without waiting the customary 14-day withdrawal period. As a
+              result, you expressly waive your right to withdraw from this
+              purchase. Please be aware that due to the high costs associated
+              with GPU processing and the immediate reservation of servers for
+              your usage, we are unable to offer refunds. These costs are
+              incurred on your behalf as soon as your purchase is made. However,
+              please note that you can cancel your service at any time. If you
+              have any questions or concerns about this policy, please feel free
+              to contact Vontane customer support.
+              <strong>Credit Policy:</strong> Please note that credits purchased
+              or earned through Vontane are for use within the Vontane platform
+              only and cannot be exchanged for cash or transferred, sold, or
+              assigned to a third party. Credits are non-refundable and must be
+              used in accordance with the specific terms and conditions
+              applicable to the particular service or feature within Vontane for
+              which they were purchased or earned.
               <li>
                 <strong>Price Changes:</strong> Vontane reserves the right to
                 modify the fees for its premium tier services at any time. We
@@ -166,7 +175,6 @@ export default function Terms() {
                 means. If you do not agree to the new fees, you may cancel your
                 subscription through Stripe before the new fees take effect.
               </li>
-
               <li>
                 <strong>Liability:</strong> Vontane is not responsible for any
                 damages or losses that may result from the use of our web app.
