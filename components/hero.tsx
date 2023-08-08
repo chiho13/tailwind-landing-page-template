@@ -101,7 +101,7 @@ export default function Hero() {
               </p>
 
               <div
-                className="max-w-xs mx-auto max-w-none flex justify-center"
+                className=" mx-auto flex justify-center"
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
