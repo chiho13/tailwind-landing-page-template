@@ -38,6 +38,30 @@ export default function RootLayout({
           data-domain="vontane.com"
           src="https://plausible.io/js/script.js"
         ></Script>
+
+        <title>Vontane | Login </title>
+        <meta name="description" content="Vontane Login" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
