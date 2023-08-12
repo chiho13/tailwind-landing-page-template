@@ -39,7 +39,7 @@ export default function Footer() {
               <li className="mb-2">
                 <a
                   href="https://app.vontane.com/blog/getting_started_with_vontane_editor-78569dfa-6e05-4f89-8111-c5733ab073f9"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out underline"
                 >
                   Getting Started
                 </a>
@@ -49,12 +49,14 @@ export default function Footer() {
 
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-semibold mb-2">Contact</h6>
+            <h6 className="text-gray-800 font-semibold mb-2 font-semibold">
+              Contact
+            </h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <a
                   href="mailto: vontane@proton.me"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out underline"
                 >
                   vontane@proton.me
                 </a>
@@ -62,52 +64,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 4th block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Company</h6>
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-gray-800 font-medium mb-2 font-semibold">
+              Custom Blocks
+            </h6>
             <ul className="text-sm">
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  About us
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Company values
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Privacy Policy
-                </a>
-              </li>
+              <li className="mb-2">Text to Speech</li>
+
+              <li className="mb-2">Equations</li>
+              <li className="mb-2">AI Images</li>
+              <li className="mb-2">Text Generation</li>
             </ul>
-          </div> */}
+          </div>
 
           {/* 5th block */}
           {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">

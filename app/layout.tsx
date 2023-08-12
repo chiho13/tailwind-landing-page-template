@@ -39,8 +39,11 @@ export default function RootLayout({
           src="https://plausible.io/js/script.js"
         ></Script>
 
-        <title>Vontane | Login </title>
-        <meta name="description" content="Vontane Login" />
+        <title>Vontane Content Editor </title>
+        <meta
+          name="description"
+          content="Vontane AI Writer, AI Text to Speech"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -60,6 +63,14 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+
+        <meta property="og:title" content="Vontane Content Editor" />
+        <meta
+          property="og:description"
+          content="Vontane AI Writer, AI Text to Speech"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vontane.com" />
 
         <link rel="icon" href="/favicon.ico" />
       </head>
