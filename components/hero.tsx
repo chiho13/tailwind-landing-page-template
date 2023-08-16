@@ -77,16 +77,17 @@ export default function Hero() {
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16 h-[900px] ">
             <h1
-              className="text-3xl md:text-[63px] text-gray-800 font-extrabold leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
+              className="text-3xl md:text-[63px] text-gray-800 font-bold font-mono leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
               data-aos="zoom-y-out"
             >
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
                 Educate
               </span>
               your readers
-              <p className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
+              <br></br>
+              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
                 10x
-              </p>
+              </span>
               your sales
               {/* <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-sky-400">
                 interactive
