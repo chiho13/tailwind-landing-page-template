@@ -81,14 +81,15 @@ export default function Hero() {
               data-aos="zoom-y-out"
             >
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
-                Educate
+                Interactive Content
               </span>
-              your readers
               <br></br>
+              Made Easy
+              {/* <br></br>
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
                 10x
               </span>
-              your sales
+              your sales */}
               {/* <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-sky-400">
                 interactive
               </span> */}
@@ -100,7 +101,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Interactive Content Creation Made Easy
+                Bespoke Content Editor for Education and Information Materials
               </p>
 
               <div
