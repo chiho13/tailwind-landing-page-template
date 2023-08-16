@@ -109,7 +109,7 @@ export default function Hero() {
                 data-aos-delay="300"
               >
                 <a
-                  href="https://app.vontane.com"
+                  href="https://app.vontane.com/login"
                   className="subscribe-btn flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  bg-gradient-to-r from-blue-500 to-sky-400 text-center text-base  font-semibold text-white transition"
                 >
                   <div className="flex items-center justify-center h-full">
