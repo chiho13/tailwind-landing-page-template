@@ -121,11 +121,11 @@ export default function Hero() {
                 <Image
                   data-aos="zoom-y-in"
                   data-aos-delay="300"
-                  src="/images/landingpageimage.png"
+                  src="/images/landing.png"
                   alt="demo image"
-                  className="rounded-lg mt-[100px] border-2 border-gray-300 shadow-md opacity-80"
+                  className="rounded-lg mt-[100px] border-2 border-gray-300 shadow-sm"
                   width={700}
-                  height={200}
+                  height={300}
                 />
               </div>
             </div>
