@@ -73,22 +73,24 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
 
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className=" pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16 h-[700px] ">
+          <div className="text-center pb-12 md:pb-16 h-[900px] ">
             <h1
-              className="text-3xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
+              className="text-3xl md:text-[63px] text-gray-800 font-extrabold leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
               data-aos="zoom-y-out"
             >
-              Create{" "}
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
-                engaging
+                Educate
               </span>
-              and{" "}
-              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-sky-400">
+              your readers
+              <p className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
+                10x
+              </p>
+              your sales
+              {/* <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r from-blue-500 to-sky-400">
                 interactive
-              </span>
-              content
+              </span> */}
             </h1>
 
             <div className="max-w-3xl mx-auto">
@@ -97,7 +99,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                For Educators, Marketers and Creatives
+                Interactive Content Creation Made Easy
               </p>
 
               <div
@@ -105,26 +107,8 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                {/* <div>
-                  <a
-                    className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
-                  >
-                    Start free trial
-                  </a>
-                </div> */}
-
-                {/* <div>
-                  <a
-                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                    href="#0"
-                  >
-                    Learn more
-                  </a>
-                </div> */}
-
                 <a
-                  href="#"
+                  href="https://app.vontane.com"
                   className="subscribe-btn flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  bg-gradient-to-r from-blue-500 to-sky-400 text-center text-base  font-semibold text-white transition"
                 >
                   <div className="flex items-center justify-center h-full">
@@ -139,106 +123,8 @@ export default function Hero() {
                   alt="demo image"
                   className="rounded-lg mt-[100px] border-2 border-gray-300 shadow-md opacity-80"
                   width={700}
-                  height={300}
+                  height={200}
                 />
-
-                {/* <div className="relative w-full max-w-md lg:max-w-lg">
-                  <div
-                    className="
-                        text-black
-                        w-full
-                        bg-white
-                        flex flex-col
-                        items-center
-                        px-4
-                        py-5
-                        rounded-2xl
-                        z-10
-                        shadow-2xl shadow-black/10
-                        md:px-7
-                        lg:py-9
-                        selection:bg-black selection:text-white
-                    "
-                  >
-                    <h3 className="font-bold text-3xl mb-10 lg:text-4xl">
-                      Get Notified
-                    </h3>
-                    <form
-                      className="flex flex-col items-center w-full space-y-8 mb-8"
-                      onSubmit={handleSubmit}
-                    >
-                      {statusMessage && (
-                        <span className="flex items-center tracking-wide text-green-600 text-md text-bold mt-1 ml-1">
-                          {statusMessage}
-                        </span>
-                      )}
-                      <div className="flex flex-col space-y-4 w-full font-semibold">
-                        <div className="p-[3px] rounded-lg  bg-gradient-to-r from-blue-500 to-sky-400">
-                          <input
-                            type="text"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="
-                                    transition-colors
-                                    w-full
-                                    bg-slate-100
-                                    px-5
-                                    py-3
-                                    rounded-md
-                                    border-0
-                                    focus:outline-none
-                                    focus:ring-[3px] focus:ring-black
-                                "
-                          />
-                        </div>
-
-                        {errorMessage && (
-                          <span className="flex items-center font-medium tracking-wide text-red-500 text-sm mt-1 ml-1">
-                            {errorMessage}
-                          </span>
-                        )}
-                      </div>
-                      <button
-                        type="submit"
-                        className="
-                                transition-all
-                                flex
-                                items-center
-                                justify-center
-                                space-x-1
-                                px-5
-                                py-3
-                                bg-black
-                                text-white
-                                rounded-lg
-                                w-full
-                                ring-transparent ring-offset-4 ring
-                                active:ring-black
-                                hover:bg-neutral-800
-                            "
-                      >
-                        <span>Join waitlist</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          className="w-5 h-5"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </button>
-                    </form>
-                    <p className="text-slate-500">
-                      We'll get in touch with you{" "}
-                      <span className="font-bold">soon</span>.
-                    </p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
