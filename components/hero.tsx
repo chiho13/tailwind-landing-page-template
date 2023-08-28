@@ -101,7 +101,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Create education and marketing Materials
+                Create Education and marketing Materials
                 <br />
                 <strong>Reach more with Text to Speech </strong>
               </p>
