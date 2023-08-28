@@ -81,7 +81,7 @@ export default function Hero() {
               data-aos="zoom-y-out"
             >
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
-                Interactive Content
+                E-Learning
               </span>
               <br></br>
               Made Easy
@@ -101,7 +101,9 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Bespoke Content Editor for Education and Information Materials
+                Create education and marketing Materials
+                <br />
+                <strong>Reach more with Text to Speech </strong>
               </p>
 
               <div
