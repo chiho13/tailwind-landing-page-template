@@ -95,7 +95,7 @@ export default function Hero() {
               </span> */}
             </h1>
 
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
@@ -123,11 +123,11 @@ export default function Hero() {
                 <Image
                   data-aos="zoom-y-in"
                   data-aos-delay="300"
-                  src="/images/landing.png"
+                  src="/images/tts.png"
                   alt="demo image"
                   className="rounded-lg mt-[100px] border-2 border-gray-300 shadow-sm"
-                  width={700}
-                  height={300}
+                  width={1000}
+                  height={500}
                 />
               </div>
             </div>
