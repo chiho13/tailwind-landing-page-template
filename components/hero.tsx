@@ -122,7 +122,7 @@ export default function Hero() {
               >
                 <a
                   href="https://app.vontane.com/login"
-                  className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  bg-gradient-to-r from-blue-500 to-sky-400 text-center text-base  font-semibold text-white transition"
+                  className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  transition duration-300 bg-blue-500 hover:bg-sky-500 text-center text-base  font-semibold text-white transition"
                 >
                   <div className="flex items-center justify-center h-full">
                     <span className="text-md ml-2">Get Started</span>
@@ -131,7 +131,7 @@ export default function Hero() {
                 <a
                   href="https://app.vontane.com/kinkakuji_(golden_pavilion)-da77312b-1bea-447a-9060-64393fb3f6b8"
                   target="_blank"
-                  className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px] text-center text-base  font-semibold text-gray-700 transition border border-gray-500 hover:bg-gray-100"
+                  className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px] text-center text-base  font-semibold text-gray-700 transition  duration-300 border border-gray-500 hover:bg-gray-200"
                 >
                   <div className="flex gap-3 items-center justify-center h-full">
                     <span className="text-md ml-2 ">Example</span>
