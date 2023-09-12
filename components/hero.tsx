@@ -111,7 +111,7 @@ export default function Hero() {
                 data-aos-delay="150"
               >
                 <strong>
-                  Powered by the latest AI Text to Speech technology
+                  Powered by the latest AI Text to Speech Technology
                 </strong>
               </p>
 
@@ -146,7 +146,7 @@ export default function Hero() {
             data-aos-delay="300"
             src="/images/iphonemockup.png"
             alt="demo image"
-            className="mx-auto lg:ml-0 rounded-lg"
+            className="mx-auto lg:ml-[40px] rounded-lg"
             width={280}
             height={580}
           />
