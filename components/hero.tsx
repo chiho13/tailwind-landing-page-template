@@ -80,11 +80,12 @@ export default function Hero() {
               className="text-5xl md:text-7xl mt-[20px] text-gray-800 font-bold font-mono leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
               data-aos="zoom-y-out"
             >
-              <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
-                Audio Content
+              <span className="bg-clip-text leading-snug text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
+                Interactive Audio Solutions
               </span>
-              <br></br>
-              Made Easy
+
+              {/* <p className="pt-10"> Made Easy</p> */}
+
               {/* <br></br>
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
                 10x
