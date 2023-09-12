@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import HeroImage from "@/public/images/hero-image.png";
 import Modal from "@/components/utils/modal";
-
+import { ArrowRight } from "lucide-react";
 export default function Hero() {
   // const [videoModalOpen, setVideoModalOpen] = useState<boolean>(false);
 
@@ -73,15 +73,15 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
 
-        <div className=" pt-24 pb-12 md:pt-32 md:pb-20">
+        <div className=" pt-24 pb-12 md:pt-32 md:pb-20 text-center block lg:flex  lg:text-left items-start">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16 h-[900px] ">
+          <div className=" lg:pl-5 pb-12 md:pb-16 ">
             <h1
-              className="text-3xl md:text-[63px] text-gray-800 font-bold font-mono leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
+              className="text-5xl md:text-7xl mt-[20px] text-gray-800 font-bold font-mono leading-tighter tracking-tighter mb-4 lg:w-[600px] mx-auto"
               data-aos="zoom-y-out"
             >
               <span className="bg-clip-text text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
-                E-Learning
+                Audio Content
               </span>
               <br></br>
               Made Easy
@@ -97,42 +97,59 @@ export default function Hero() {
 
             <div className="max-w-4xl mx-auto">
               <p
-                className="text-xl text-gray-600 mb-8"
+                className="text-2xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Create Education and marketing Materials
+                Create Professional Audio Content
                 <br />
-                <strong>Reach more with Text to Speech </strong>
+                for Travel, Education and Marketing
+              </p>
+              <p
+                className="text-lg text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                <strong>
+                  Powered by the latest AI Text to Speech technology
+                </strong>
               </p>
 
               <div
-                className=" mx-auto flex justify-center"
+                className=" mx-auto justify-center lg:justify-start flex gap-6 "
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
                 <a
                   href="https://app.vontane.com/login"
-                  className="subscribe-btn flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  bg-gradient-to-r from-blue-500 to-sky-400 text-center text-base  font-semibold text-white transition"
+                  className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px]  bg-gradient-to-r from-blue-500 to-sky-400 text-center text-base  font-semibold text-white transition"
                 >
                   <div className="flex items-center justify-center h-full">
-                    <span className="text-md ml-2">Sign up for Free</span>
+                    <span className="text-md ml-2">Get Started</span>
                   </div>
                 </a>
-
-                <Image
-                  data-aos="zoom-y-in"
-                  data-aos-delay="300"
-                  src="/images/tts.png"
-                  alt="demo image"
-                  className="rounded-lg mt-[100px] border-2 border-gray-300 shadow-sm"
-                  width={1000}
-                  height={500}
-                />
+                <a
+                  href="https://app.vontane.com/kinkakuji_(golden_pavilion)-da77312b-1bea-447a-9060-64393fb3f6b8"
+                  target="_blank"
+                  className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px] text-center text-base  font-semibold text-gray-700 transition border border-gray-500 hover:bg-gray-100"
+                >
+                  <div className="flex gap-3 items-center justify-center h-full">
+                    <span className="text-md ml-2 ">Example</span>
+                    <ArrowRight className="text-gray-700" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-
+          <Image
+            data-aos="zoom-y-in"
+            data-aos-delay="300"
+            src="/images/iphonemockup.png"
+            alt="demo image"
+            className="mx-auto lg:ml-0 rounded-lg"
+            width={280}
+            height={580}
+          />
           {/* Hero image */}
         </div>
       </div>
