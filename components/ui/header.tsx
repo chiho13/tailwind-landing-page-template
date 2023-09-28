@@ -43,7 +43,7 @@ export default function Header() {
                   href="https://app.vontane.com/login"
                   className="font-semibold rounded-[10px] border border-gray-300 text-gray-600 hover:text-gray-900 px-5 py-2 flex items-center transition duration-300 ease-in-out hover:bg-gray-100 hover:border-gray-500"
                 >
-                  Sign in
+                  Log in
                 </Link>
               </li>
               {/* <li>

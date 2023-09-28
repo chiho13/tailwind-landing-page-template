@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import HeroImage from "@/public/images/hero-image.png";
 import Modal from "@/components/utils/modal";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 export default function Hero() {
   // const [videoModalOpen, setVideoModalOpen] = useState<boolean>(false);
 
@@ -81,7 +81,7 @@ export default function Hero() {
               data-aos="zoom-y-out"
             >
               <span className="bg-clip-text leading-snug text-transparent mr-6   bg-gradient-to-r to-blue-500 from-sky-400">
-                Interactive Audio Solutions
+                Interactive Widgets for Any Website
               </span>
 
               {/* <p className="pt-10"> Made Easy</p> */}
@@ -102,18 +102,9 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Create Professional Audio Content
+                Create Professional Widgets
                 <br />
-                for Travel, Education and Marketing
-              </p>
-              <p
-                className="text-lg text-gray-600 mb-8"
-                data-aos="zoom-y-out"
-                data-aos-delay="150"
-              >
-                <strong>
-                  Powered by the latest AI Text to Speech Technology
-                </strong>
+                to boost your website & online store
               </p>
 
               <div
@@ -130,7 +121,7 @@ export default function Hero() {
                   </div>
                 </a>
                 <a
-                  href="https://app.vontane.com/kinkakuji_(golden_pavilion)-da77312b-1bea-447a-9060-64393fb3f6b8"
+                  href="https://app.vontane.com/the_persistence_of_memory-019a2371-2871-40ec-941b-a21fec1f034e"
                   target="_blank"
                   className=" flex h-[44px] w-[160px] items-center justify-center rounded-[10px] text-center text-base  font-semibold text-gray-700 transition  duration-300 border border-gray-500 hover:bg-gray-200"
                 >
@@ -145,13 +136,12 @@ export default function Hero() {
           <Image
             data-aos="zoom-y-in"
             data-aos-delay="300"
-            src="/images/iphonemockup.png"
+            src="/images/iphonemockup2.png"
             alt="demo image"
             className="mx-auto lg:ml-[40px] rounded-lg"
             width={280}
             height={580}
           />
-          {/* Hero image */}
         </div>
       </div>
     </section>
