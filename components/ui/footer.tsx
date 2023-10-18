@@ -72,8 +72,7 @@ export default function Footer() {
               <li className="mb-2">Text to Speech</li>
 
               <li className="mb-2">Equations</li>
-              <li className="mb-2">AI Images</li>
-              <li className="mb-2">Text Generation</li>
+              <li className="mb-2">Image Hotspots</li>
             </ul>
           </div>
 
