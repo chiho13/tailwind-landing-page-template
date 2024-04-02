@@ -69,10 +69,9 @@ export default function Footer() {
               Custom Blocks
             </h6>
             <ul className="text-sm">
-              <li className="mb-2">Text to Speech</li>
-
               <li className="mb-2">Equations</li>
               <li className="mb-2">Image Hotspots</li>
+              <li className="mb-2">Financial Charts (coming soon)</li>
             </ul>
           </div>
 
